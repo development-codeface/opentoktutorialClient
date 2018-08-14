@@ -1,0 +1,57 @@
+<div >
+    
+    <div id="dashbaordVideo">
+        <div id="dashboardUserName"></div>
+        <div id="videos">
+        		<div id="subscriber"></div>
+        		<div id="publisher"></div>
+    		</div>
+    </div>
+    <div id="chatList">
+     <p>list of live user </p>
+     <div id="chatuser">
+        
+     </div>
+     
+     <!--Modal to show that we are calling-->
+        <div id="callModal" class="modal">
+            <div class="modal-content text-center">
+                <div class="modal-header" id="callerInfo"></div>
+
+                <div class="modal-body">
+                    <button type="button" class="btn btn-danger btn-sm" id='endCall'>
+                        <i class="fa fa-times-circle"></i> End Call
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Modal end-->
+
+
+        <!--Modal to give options to receive call-->
+        <div id="rcivModal" class="modal">
+            <div class="modal-content">
+                <div class="modal-header" id="calleeInfo"></div>
+
+                <div class="modal-body text-center">
+                    <button type="button" class="btn btn-success btn-sm answerCall" id='startAudio'>
+                        <i class="fa fa-phone"></i> Audio Call
+                    </button>
+                    <button type="button" class="btn btn-success btn-sm answerCall" id='startVideo'>
+                        <i class="fa fa-video-camera"></i> Video Call
+                    </button>
+                    <button type="button" class="btn btn-danger btn-sm" id='rejectCall'>
+                        <i class="fa fa-times-circle"></i> Reject Call
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!--Modal end-->
+        
+        <!--Snackbar -->
+        <div id="snackbar"></div>
+        <!-- Snackbar -->
+           
+    </div> 
+    <script type="text/javascript" src="js/dashboard.js"></script>   
+</div>
